@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dihook"
-version = "1.0.0b2"
+version = "1.0.0"
 description = "A lightweight Python library for sending Discord webhook messages and embeds."
 readme = "README.md"
 authors = [
@@ -29,7 +29,7 @@ classifiers = [
     "Topic :: Internet",
 ]
 dependencies = [
-    "requests>=2.28.0",
+    "requests>=2.34.2",
 ]
 
 [project.urls]
@@ -39,9 +39,8 @@ dependencies = [
 "Changelog"   = "https://github.com/dj-kaif/dihook/blob/main/CHANGELOG.md"
 "PyPI"        = "https://pypi.org/project/dihook"
 
-# Tells setuptools to ONLY bundle the `webhook/` package.
-# Without this, it might accidentally include `examples/` in the published package.
+
 [tool.setuptools.packages.find]
 where   = ["."]
-include = ["webhook*"]
+include = ["dihook*"]
 exclude = ["examples*", "tests*"]
