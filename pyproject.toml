@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dihook"
-version = "1.0.0b1"
+version = "1.0.0b2"
 description = "A lightweight Python library for sending Discord webhook messages and embeds."
 readme = "README.md"
 authors = [

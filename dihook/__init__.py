@@ -1,3 +1,3 @@
-from .sender import send
+from .dihook import Dihook
 
-__all__ = ["send"]
+__all__ = ["Dihook"]
