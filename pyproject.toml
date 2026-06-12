@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dihook"
+version = "1.0.0b1"
+description = "A lightweight Python library for sending Discord webhook messages and embeds."
+readme = "README.md"
+authors = [
+    { name = "DJ KAIF", email = "djkaifdev@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["discord", "webhook", "bot", "notification", "embed", "discord-webhook", "dihook"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Communications :: Chat",
+    "Topic :: Internet",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+"Homepage"    = "https://github.com/dj-kaif/dihook"
+"Repository"  = "https://github.com/dj-kaif/dihook"
+"Bug Tracker" = "https://github.com/dj-kaif/dihook/issues"
+"Changelog"   = "https://github.com/dj-kaif/dihook/blob/main/CHANGELOG.md"
+"PyPI"        = "https://pypi.org/project/dihook"
+
+# Tells setuptools to ONLY bundle the `webhook/` package.
+# Without this, it might accidentally include `examples/` in the published package.
+[tool.setuptools.packages.find]
+where   = ["."]
+include = ["webhook*"]
+exclude = ["examples*", "tests*"]
