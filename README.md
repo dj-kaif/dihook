@@ -6,7 +6,7 @@
 [![PyPI](https://img.shields.io/pypi/v/dihook)](https://pypi.org/project/dihook)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/dj-kaif/webhook.py?style=social)](https://github.com/dj-kaif/dihook)
+[![Stars](https://img.shields.io/github/stars/dj-kaif/dihook?style=social)](https://github.com/dj-kaif/dihook)
 
 
 **dihook** makes it simple to send Discord webhook messages from any Python script — without unnecessary boilerplate.
